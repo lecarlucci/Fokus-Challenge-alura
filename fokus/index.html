@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fokus Challenge</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Unbounded:wght@200;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedorPrincipal">
+        <img src="image/Fokus -  logo.svg" alt="logo fokus">
+        <div class="contenedorTimer">
+            <div class="contenedorParrafo">
+                <p class="parrafo">Optimiza tu productividad,<strong> sumérgete en lo que importa.</strong></p>
+            </div>
+
+            <div class="timer">
+                <div class="timerModo">
+                    <a href="/" class="botonesTimer btn" data-time="1500" id="enfocar">Enfocar</a>
+                    <a href="/" class="botonesTimer btn" data-time="300" id="corto">Descanso Corto</a>
+                    <a href="/" class="botonesTimer btn" data-time="900" id="largo">Descanso Largo</a>
+                </div>
+                <div class="panelTimer">
+                    <p class="cronometro" id="minutos"></p>
+                    <p class="cronometro">:</p>
+                    <p class="cronometro" id="segundos"></p>
+                </div>
+                
+
+                <button  id="btn-inicio" class="inicioPausa">Iniciar</button>
+            </div>
+        </div>
+    </div>
+    <audio src="src/sounds/alarm-clock-short-6402.mp3"></audio>
+    <script src="/src/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Unbounded', sans-serif;
+    background: linear-gradient(#1875E9, #041832 ,#01080E);
+}
+p {
+    color: #FFFFFF;  
+}
+.parrafo {
+    font-weight: 200;
+    font-size: 54px;
+    width: 50vw;
+    height: 50vh;
+}
+strong{
+    font-weight: 700;
+    font-size: 54px;
+}
+img {
+    width: 157px;
+    height: 40px;
+    display: flex;
+}
+.contenedorPrincipal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+}
+.contenedorTimer {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+.contenedorParrafo{
+    padding: 0 30px;
+    justify-content: center;
+    gap: 15px;
+}
+.timer{
+    display: flex;
+    width: 500px;
+    height: 350px;
+    padding: 25px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    border: 2px solid #144480;
+    background: rgba(20, 68, 128, 0.3);
+    margin: 0;
+    gap: 25px;
+}
+.timerModo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.activo {
+    border: 2px solid rgba(24, 117, 233, 0.50);
+    background: rgba(24, 117, 233, 0.30);
+    border-radius: 8px;
+}
+.panelTimer {
+    display: flex;
+}
+
+.botonesTimer {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    justify-content: center;
+    padding: 8px;
+    cursor: pointer;
+    background: none;
+    border:none;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.cronometro {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+    color: #FFFFFF;
+}
+.inicioPausa {
+    width: 150px;
+    height: 50px;
+    border-radius: 32px;
+    color: #FFFFFF;
+    font-size: 18px;
+    background: linear-gradient(180deg, #B872FF 0%, #144480 100%);
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px){
+    .contenedorTimer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 550px) {
+    .contenedorPrincipal{
+        display: flex;
+    }
+    .contenedorTimer {
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedorParrafo{
+        display: flex;
+        width: auto;
+        height: 15rem;
+        justify-content: center;
+    }
+    .parrafo, strong{
+        font-size: 26px;
+    }
+    .timer {
+        height: 270px;
+        width: 360px;
+    }
+    .botonesTimer{
+        font-size: 12.5px;
+    }
+}
